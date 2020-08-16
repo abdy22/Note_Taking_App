@@ -1,5 +1,5 @@
 # Note_Taking_App
-This is a note taking app that lets user add,edit and save note to Realm database 
+This is an android app that lets user create,edit and save note to Realm database 
    
    dependencies {
         classpath "com.android.tools.build:gradle:4.0.1"
