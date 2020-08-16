@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.MainActivity"
+    android:background="@android:color/black"
+    android:id="@+id/nonEmpty"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:minHeight="@android:dimen/app_icon_size"
+            android:visibility="visible"
+            app:expandedTitleMarginStart="50dp"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            android:textAlignment="center"
+            app:title="To do ">
+
+
+
+
+            <Toolbar
+                android:id="@+id/toolbar_ID"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                />
+
+            <TextView
+                android:id="@+id/TopNotifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="60dp"
+                android:text="All Notes"
+
+
+                android:textColor="@android:color/white"
+                android:textSize="45sp"
+                app:layout_scrollFlags="scroll">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/numOfNotes"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Notes"
+
+
+                android:textColor="@android:color/white"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="190dp">
+
+            </TextView>
+
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="30dp"
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+         />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/floatingAdd"
+            android:onClick="addNewNote"
+            app:layout_anchor="@id/appBarLayout"
+
+            app:layout_anchorGravity="right|top"
+
+
+            android:src="@drawable/ic_baseline_add_24"
+            />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/menu_items"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:onClick="popMenu"
+
+
+
+
+
+        android:src="@drawable/ic_baseline_menu_24"
+        android:tint="@android:color/black"
+        app:layout_anchor="@+id/appBarLayout"
+
+        app:layout_anchorGravity="left|top" />
+
+    <TextView
+        android:id="@+id/notifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:text="Add Notes"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="100dp">
+
+    </TextView>
+
+
+    <ImageView
+
+        android:id="@+id/addFromEmptyRV"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="300dp"
+
+        android:onClick="addNewNote"
+        android:src="@drawable/ic_baseline_add_empty_view"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
