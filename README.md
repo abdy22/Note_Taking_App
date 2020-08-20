@@ -18,4 +18,21 @@ Machine Learning text recognition Api.
        
        
        
+       
+       
+       
+       
+  ![20200819_195951 1](https://user-images.githubusercontent.com/45052790/90712670-6b18ac80-e258-11ea-9beb-f93906f6dd62.jpg)
+
+![20200819_200030 1](https://user-images.githubusercontent.com/45052790/90712728-85528a80-e258-11ea-8b22-01a8054e372e.jpg)
+
+
+![20200819_200052 1](https://user-images.githubusercontent.com/45052790/90712757-97342d80-e258-11ea-9f53-ee6ae2950190.jpg)
+
+![20200819_200118 1](https://user-images.githubusercontent.com/45052790/90712808-aca95780-e258-11ea-86bc-7b9ee9d1e68c.jpg)     
+       
+       
+       
+       
+       
  
